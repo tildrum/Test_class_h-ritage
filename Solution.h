@@ -2,6 +2,8 @@
 class Solution
 {
 public:
+
+	Solution();
 	void randomize();
 };
 

@@ -9,8 +9,10 @@
 #include "Point.h"
 #include "Unit.h"
 #include "Pod.h"
-//#include "Solution.h"
-//#include "Move.h"
+#include "Solution.h"
+#include "Move.h"
+#include "checkpoint.h"
+#include "Collision.h"
 
 //////////////////////////////
 
@@ -21,13 +23,12 @@ int main()
     Point Test1(2, 2);    
     Unit Test2(1, 2, 3, 4, 5, 6);
     Pod Test3(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    checkpoint test4(1.0 , 2.0, 3, 4.0);
 
     Test1.debug();
     Test2.debug();
     Test3.debug();
-
-
-
+    
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
