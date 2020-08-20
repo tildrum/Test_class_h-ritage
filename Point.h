@@ -18,7 +18,7 @@ public :
 	void debug();
 	float distance1(Point p);
 	float distance2(Point p);
-	//Point closest(Point a, Point b);
+	Point* closest(Point a, Point b);
 
 
 

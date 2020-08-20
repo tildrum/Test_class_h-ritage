@@ -11,7 +11,8 @@ protected :
 
 public:
 
-    Unit(int x, int y, int id, float r, float vx, float vy);
+    Unit(float x, float y, int id, float r);
+    Unit(float x, float y, int id, float r, float vx, float vy);
 
     void debug();
     void bounce();

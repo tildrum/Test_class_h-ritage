@@ -28,4 +28,26 @@ float Point::distance1(Point a) {
 float Point::distance2(Point a) {
     return sqrt(this->distance1(a));
 }
-//float Point::closest(Point a, Point b) { cout << "COUCOU" << endl; }
+Point* Point::closest(Point a, Point b) { 
+
+    float da = b.m_y - a.m_y;
+    float db = a.m_x - b.m_x;
+    float c1 = da * a.m_x + db * a.m_y;
+    float c2 = -db * this->m_x + da * this->m_y;
+    float det = da * da + db * db;
+    float cx = 0;
+    float cy = 0;
+
+    if (det != 0) {
+        cx = (da * c1 - db * c2) / det;
+        cy = (da * c2 + db * c1) / det;
+    }
+    else {
+        // Le point est déjà sur la droite
+        cx = this->m_x;
+        cy = this->m_y;
+    }
+
+    return new Point(cx, cy);
+
+}

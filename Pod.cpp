@@ -90,9 +90,11 @@ void Pod::move(float t) {
 void Pod::end() {
     this->m_x = round(this->m_x);
     this->m_y = round(this->m_y);
-    //this->m_vx = truncate(this->m_vx * 0.85); // ATTETION RAJOUTER UN CAST d'entier ici
-    //this->m_vx = truncate(this->m_vx * 0.85);
-
+    int vx = this->m_vx * 0.85;     //Ici on cast dans un entier afin d'arrondir la valeur
+    int vy = this->m_vy * 0.85;
+    this->m_vx = vx;
+    this->m_vy = vy;
+    
     // N'oubliez pas que le timeout descend de 1 chaque tour. Il revient à 100 quand on passe par un checkpoint
     this->m_timeout -= 1;
 }

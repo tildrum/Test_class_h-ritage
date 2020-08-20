@@ -139,14 +139,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="checkpoint.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="Move.cpp" />
     <ClCompile Include="Pod.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Solution.cpp" />
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="checkpoint.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="Move.h" />
     <ClInclude Include="Pod.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="Solution.h" />
     <ClInclude Include="Unit.h" />
   </ItemGroup>
   <ItemGroup>

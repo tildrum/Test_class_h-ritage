@@ -13,18 +13,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers sources\Point+héritier">
+      <UniqueIdentifier>{343bceba-4446-4bfc-9574-8ea731dc0ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Move+Solution">
+      <UniqueIdentifier>{5c694694-9331-4e2b-b9bc-1b9dd3294f38}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Point.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Unit.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="Pod.cpp">
+      <Filter>Fichiers sources\Point+héritier</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Fichiers sources\Point+héritier</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Fichiers sources\Point+héritier</Filter>
+    </ClCompile>
+    <ClCompile Include="Move.cpp">
+      <Filter>Fichiers sources\Move+Solution</Filter>
+    </ClCompile>
+    <ClCompile Include="Solution.cpp">
+      <Filter>Fichiers sources\Move+Solution</Filter>
+    </ClCompile>
+    <ClCompile Include="checkpoint.cpp">
+      <Filter>Fichiers sources\Point+héritier</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -36,6 +54,18 @@
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Pod.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Move.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="checkpoint.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
